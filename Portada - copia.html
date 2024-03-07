@@ -12,15 +12,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        
+
 </head>
 
-<body>
+<body class="bg-light">
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light con">
+        <div class="container ">
             <a class="navbar-brand" href="#">Real Club Recreativo de Huelva</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,67 +42,123 @@
                     </li>
                 </ul>
             </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Iniciar Sesión
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="mb-3 mt-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                        name="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pwd" class="form-label">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                        name="pswd">
+                                </div>
+                                <div class="form-check mb-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Iniciar
+                                    Sesión</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
+    <a href="#">
+        <div class="fotoquieta text-center bg-light">
+
+            <img class="w-75 h-25" src="Imagenes/Real Club Recreativo de Huelab.png">
+        </div>
+    </a>
 
     <div class="container mt-5">
-        <a href="#">
-            <div class="fotoquieta">
-                <img src="Imagenes/recreativo-big.png"></img>
-            </div>
-        </a>
+
         <section id="noticias">
             <h2>Noticias</h2>
+            <br>
             <div class="noticia-con-foto">
-                <h3>Victoria contra el Melilla que puede significar un PlayOff</h3>
+                <h3 class="text-primary">Victoria contra el Melilla que puede significar un PlayOff</h3>
+                <p>La última victoria del equipo ante el Melilla, después de remontar el 0-1 inicial deja muy buenas
+                    <br> sensaciones de cara a mantener el quinto puesto y jugar el playOff de ascenso a segunda
+                    división
+                </p>
                 <a href="noticia1.html" target="_blank"><img
                         src="Imagenes/Segundo-Recre-Caye-Quintana-Melilla_1872722938_203155843_667x375.jpg"
-                        class="rounded-4"></a></br>
+                        class="rounded-4"></a><br><br>
 
             </div>
 
             <div class="noticia-con-foto">
-                <h3>La falta de un delantero suplente puede clave para el PlayOff</h3>
-                <a href="noticia3.html" target="_blank"><img
-                        src="Imagenes/murciaRecre.jpg" class="rounded-4"></a></br>
+                <br>
+                <h3 class="text-primary">La falta de un delantero suplente puede ser clave para el PlayOff</h3>
+                <p>La derrota contra un rival directo como el Murcia deja una evidente falta de un delantero centro
+                    <br> suplente que puede costar el jugar el playOff de ascenso.
+                </p>
+                <a href="noticia3.html" target="_blank"><img src="Imagenes/murciaRecre.jpg" class="rounded-4"></a><br>
 
             </div>
             <div class="noticia-con-foto">
-                <h3>Urgen reformas en el Nuevo Colombino</h3>
+                <br><br>
+                <h3 class="text-primary">Urgen reformas en el Nuevo Colombino</h3>
+                <p>El deprorable estado del estadio en sus inmediaciones deja bastante claro que es necesaria una
+                    reforma. <br> Grietas, agujeros, asientos rotos... son las lamentables imágenes que deja el estadio
+                    a los aficionados</p>
                 <a href="noticia4.html" target="_blank"><img src="Imagenes/nuevoColombino.jpg"
-                        class="rounded-4"></a></br>
+                        class="rounded-4 w-50"></a><br>
             </div>
         </section>
 
-
         <section id="galeria">
-            <h2>Galería</h2>
 
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <br><br>
 
+            <div id="demo" class="carousel slide container text-center w-75" data-bs-ride="carousel">
 
-                <h3>Fotos del último entrenamiento</h3>
+                <!-- Indicators/dots -->
+                <br><br>
+                <h2>Algunas imágenes</h2>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
 
-
+                <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="Imagenes/laMagica.jpg" alt="Lucas y Carvajal" class="d-block w-100">
+                    <div class="carousel-item active  ">
+                        <img src="Imagenes/laMagica.jpg" alt="Los Angeles" class="d-block w-100">
                     </div>
-                    <div class="carousel-item">
-                        <img src="Imagenes/mosaico.jpeg" alt="Nacho" class="d-block w-100">
+                    <div class="carousel-item ">
+                        <img src="Imagenes/estadio.jpg" alt="Chicago" class="d-block w-100">
                     </div>
-                    <div class="carousel-item">
-                        <img src="Imagenes/Recre.jpg" alt="Bellingham entrenando en solitario" class="d-block w-100">
+                    <div class="carousel-item ">
+                        <img src="Imagenes/Bandera.jpg" alt="New York" class="d-block w-100">
                     </div>
                 </div>
 
-
+                <!-- Left and right controls/icons -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
@@ -110,240 +166,309 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-        </section>
 
 
-        <section id="catalogo">
-            <h2>Catálogo</h2>
-            <div class="row">
-                <div class="card col-md-4" style="width:400px">
-                    <div class="equipacion">
-                        <a href="#">
-                            <img class="card-img-top" src="Imagenes/primeraEqu.png" alt="Card image">
-                        </a>
+
+            <section id="catalogo">
+                <br><br>
+                <h2>Catálogo</h2>
+                <div class="row">
+                    <div class="card col-md-4" style="width:400px">
+                        <div class="equipacion">
+                            <a href="#">
+                                <img class="card-img-top" src="Imagenes/primeraEqu.png" alt="Card image">
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Primera Equipación 2023/2024</h4>
+                            <p class="card-text">Desde 70€</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
                     </div>
 
-                    <div class="card-body">
-                        <h4 class="card-title">Primera Equipación 2023/2024</h4>
-                        <p class="card-text">Desde 70€</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <div class="card col-md-4" style="width:400px">
+                        <div class="equipacion">
+                            <a href="#">
+                                <img class="card-img-top" src="Imagenes/SegundaEq.webp" alt="Card image">
+
+                            </a>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">Segunda Equipación 2023/2024</h4>
+                            <p class="card-text">Desde 70€</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
                     </div>
+
+                    <div class="card col-md-4" style="width:400px">
+                        <div class="equipacion">
+                            <a href="#">
+                                <img class="card-img-top" src="Imagenes/TerceraEq.webp" alt="Card image">
+
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Tercera Equipación 2023/2024</h4>
+                            <p class="card-text">Desde 65€</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width:400px">
+                        <div class="equipacion">
+                            <a href="#">
+                                <img class="card-img-top" src="Imagenes/EqPortero.webp" alt="Card image">
+                            </a>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">Camiseta Portero 2023/2024</h4>
+                            <p class="card-text">Desde 60€</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4" style="width:400px">
+                        <div class="equipacion">
+                            <a href="#">
+                                <img class="card-img-top" src="Imagenes/pantalon.webp" alt="Card image">
+
+                            </a>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">Pantalon Segunda Equipación</h4>
+                            <p class="card-text">Desde 25€</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4" style="width:400px">
+                        <div class="equipacion">
+                            <a href="#">
+                                <img class="card-img-top" src="Imagenes/pantalon1.webp" alt="Card image">
+
+                            </a>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">Pantalón Primera Equipación</h4>
+                            <p class="card-text">Desde 30€</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+
                 </div>
-
-                <div class="card col-md-4" style="width:400px">
-                    <div class="equipacion">
-                        <a href="#">
-                            <img class="card-img-top" src="Imagenes/SegundaEq.webp" alt="Card image">
-                           
-                        </a>
-                    </div>
+            </section>
 
 
-                    <div class="card-body">
-                        <h4 class="card-title">Segunda Equipación 2023/2024</h4>
-                        <p class="card-text">Desde 70€</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
+            <section id="tabla">
+                <h2>Jugadores destacados</h2>
+                <table class="table mb-4 table-bordered text-center">
+                    <tr class="arriba">
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>PJ</th>
+                        <th>Goles</th>
+                        <th>Asistencias</th>
+                        <th>Tarjetas Amarillas</th>
+                        <th>Tarjetas Rojas</th>
+                        <th>Posición</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+
+                        <td>Caye Quintana</td>
+                        <td>26</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>Delantero</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>De la Rosa</td>
+                        <td>20</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>Delantero</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Domínguez</td>
+                        <td>24</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>Centrocampista</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Luis Alcalde</td>
+                        <td>25</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>Centrocampista</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Josiel Núñez</td>
+                        <td>25</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>Centrocampista</td>
+                    </tr>
+                </table>
+
+            </section>
+
+
+
+            <footer class="text-center bg-body-tertiary">
+                <!-- Grid container -->
+                <div class="container pt-4">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!"
+                            role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!"
+                            role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!"
+                            role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!"
+                            role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!"
+                            role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                        <!-- Github -->
+                        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!"
+                            role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
                 </div>
-
-                <div class="card col-md-4" style="width:400px">
-                    <div class="equipacion">
-                        <a href="#">
-                            <img class="card-img-top" src="Imagenes/TerceraEq.webp" alt="Card image">
-                           
-                        </a>
+                <form action="/action_page.php" class="container text-start">
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Nombre</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
                     </div>
 
-                    <div class="card-body">
-                        <h4 class="card-title">Tercera Equipación 2023/2024</h4>
-                        <p class="card-text">Desde 65€</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="Nombre de Usuario">
                     </div>
-                </div>
-                <div class="card col-md-4" style="width:400px">
-                    <div class="equipacion">
-                        <a href="#">
-                            <img class="card-img-top" src="Imagenes/EqPortero.webp" alt="Card image">
-                        </a>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Ciudad</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ciudad" name="email">
                     </div>
-
-
-                    <div class="card-body">
-                        <h4 class="card-title">Camiseta Portero 2023/2024</h4>
-                        <p class="card-text">Desde 60€</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Calle</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Calle" name="pswd">
                     </div>
-                </div>
-
-                <div class="card col-md-4" style="width:400px">
-                    <div class="equipacion">
-                        <a href="#">
-                            <img class="card-img-top" src="Imagenes/pantalon.webp" alt="Card image">
-                           
-                        </a>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Código Postal</label>
+                        <input type="email" class="form-control" id="email" placeholder="Codigo" name="email">
                     </div>
-
-
-                    <div class="card-body">
-                        <h4 class="card-title">Pantalon Segunda Equipación</h4>
-                        <p class="card-text">Desde 25€</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
+                        </label>
                     </div>
-                </div>
+                    <select class="form-select">
+                        <option>Soy Aficionado</option>
+                        <option>Soy periodista</option>
+                        <option>Soy visitanate</option>
+                        <option>Soy Rafa</option>
+                    </select>
 
-                <div class="card col-md-4" style="width:400px">
-                    <div class="equipacion">
-                        <a href="#">
-                            <img class="card-img-top" src="Imagenes/pantalon1.webp" alt="Card image">
-                           
-                        </a>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Acepto la política de privacidad</label>
+                    </div><br>
+                    <label for="comment">Comentario</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                    <button type="submit" class="btn btn-primary">Comentar</button>
+                </form>
+
+                <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+                            <!-- Grid row -->
+                            <div class="row mt-3">
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <!-- Content -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        <i class="fas fa-gem me-3"></i>Real Club Recreativo de Huelva
+                                    </h6>
+                                    <p>
+                                        Somos una página dedicada a mostras noticias y hechos sobre el Real Club
+                                        Recreativo de Huelva. Fichajes, resultados, estadísticas...
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4 text-center">Contacto</h6>
+                                    <p><i class="fas fa-home me-3"></i> Estadio Nuevo Colombino</p>
+                                    <p>
+                                        <i class="fas fa-envelope me-3"></i>
+                                        recreativodehuelva@gmail.com
+                                    </p>
+                                    <p><i class="fas fa-phone me-3"></i> +34 722 54 22 02</p>
+                                    
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+                        </div>
+                    </section>
+                    <!-- Section: Links  -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                        © 2021 Copyright:
+                        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                     </div>
-
-
-                    <div class="card-body">
-                        <h4 class="card-title">Pantalón Primera Equipación</h4>
-                        <p class="card-text">Desde 30€</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="tabla">
-            <h2>Clasificación LaLiga</h2>
-            <table class="table table-bordered">
-                <tr class="arriba">
-                    <th></th>
-                    <th>Equipos</th>
-                    <th>PJ</th>
-                    <th>V</th>
-                    <th>E</th>
-                    <th>D</th>
-                    <th>PTS</th>
-                    <th>GF</th>
-                    <th>GC</th>
-                    <th>DG</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <img class=" img-fluid w-25 " src="Escudos/Escudo_CDCastellon_Color1.jpg" alt="Castellón">
-                        Real Madrid
-                    </td>
-                    <td>24</td>
-                    <td>19</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>61</td>
-                    <td>52</td>
-                    <td>15</td>
-                    <td>+37</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>
-                        <img src="equipos/gir.png" alt="Gerona" class="escudo">
-                        Gerona
-                    </td>
-                    <td>24</td>
-                    <td>17</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>56</td>
-                    <td>52</td>
-                    <td>29</td>
-                    <td>+23</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>
-                        <img src="equipos/fcb.png" alt="FC Barcelona" class="escudo">
-                        FC Barcelona
-                    </td>
-                    <td>24</td>
-                    <td>17</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>56</td>
-                    <td>52</td>
-                    <td>29</td>
-                    <td>+23</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>
-                        <img src="equipos/atm.png" alt="Atleti" class="escudo">
-                        Atleti
-                    </td>
-                    <td>24</td>
-                    <td>17</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>56</td>
-                    <td>52</td>
-                    <td>29</td>
-                    <td>+23</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>
-                        <img src="equipos/ath.png" alt="Atleti" class="escudo">
-                        Athletic
-                    </td>
-                    <td>24</td>
-                    <td>17</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>56</td>
-                    <td>52</td>
-                    <td>29</td>
-                    <td>+23</td>
-                </tr>
-            </table>
-
-        </section>
+                    <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
     </div>
 
 
-    <footer class="text-center bg-body-tertiary">
-      <!-- Grid container -->
-      <div class="container pt-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-          <!-- Twitter -->
-          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-
-          <!-- Google -->
-          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-          <!-- Instagram -->
-          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
-          <!-- Linkedin -->
-          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-          <!-- Github -->
-          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2020 Copyright:
-        <a class="text-body" href="Portada.html">RealClubRecreativoDeHuelva.com</a>
-      </div>
 
 </body>
 
